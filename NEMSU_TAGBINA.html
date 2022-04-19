@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>North Eastern Mindanao State University</title>
+    <link rel="shortcut icon" href="assets/nemsu logo/Surigao_del_Sur_State_University.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nemsuCSSDesign.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="page-header">
+        <nav>
+            <a href="NEMSU_TAGBINA.html">NEMSU<p>TAGBINA</p></a>
+            <div class="page-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+                <h1>Computer as a Subject</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates <br> magni nihil sed corrupti libero aliquam velit nulla excepturi a.</P>
+                 <ul>
+                    <li><a href="" class="email-btn">Email us for inquires</a></li>
+                    <li><a href="" class="enroll-btn">Enroll now!</a></li>
+                 </ul>
+        </div>
+    </section>
+    <!-- another section for details -->
+    <section class="details">
+        <h1>Build your data</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur?</p>
+        <div class="info">
+            <div class="info-text">
+                <h3>Explore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur, optio delectus dolore tenetur nostrum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptas earum nam necessitatibus corrupti doloremque.</p>
+            </div>
+            <div class="info-text">
+                <h3>Create</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur, optio delectus dolore tenetur nostrum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum reiciendis aut ut eaque quas magni.</p>
+            </div>
+            <div class="info-text">
+                <h3>expand</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur, optio delectus dolore tenetur nostrum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime velit quod similique amet? Adipisci, aut?</p>
+            </div>
+        </div>
+    </section>
+    <!-- university section, to make the page longer and interesting -->
+    <section class="university">
+        <h1>Visit us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, fuga.</p>
+        <div class="university-info">
+            <div class="BGPIC">
+                <img src="assets/NEMSU_WEBtry/pageBG/u1.jpg" alt="bgIMAGE">
+                <div class="colorblend">
+                    <a href="https://www.sdssu.edu.ph/"><h2>Main Campus</h2></a>
+                </div>
+            </div>
+            <div class="BGPIC">
+                <img src="assets/NEMSU_WEBtry/pageBG/u2.jpg" alt="bgIMAGE2">
+                <div class="colorblend">
+                    <a href="https://sdssu-lianga.site/"><h2>Lianga</h2></a>
+                     <!-- div is empty. For color layer blend only -->
+                </div>
+            </div>
+            <div class="BGPIC">
+                <img src="assets/NEMSU_WEBtry/pageBG/u3.jpeg" alt="bgIMAGE3">
+                <div class="colorblend">
+                    <a href="https://cantilan.sdssu.edu.ph/index.php"><h2>Cantilan</h2></a>
+                     <!-- div is empty. For color layer blend only -->
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- some javascript toggle menu (base on the internet only)-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

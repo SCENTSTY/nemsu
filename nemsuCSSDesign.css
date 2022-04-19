@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.page-header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/NEMSU_WEBtry/pageBG/5-Fakta-Menarik-tentang-Programmer.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+    font-size: 35px;
+}
+nav a p{
+    font-size: 21.2px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 5.1px;
+}
+.page-links{
+    flex: 1;
+    text-align: right;
+}
+.page-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.page-links ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 13px;
+}
+.page-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0057A0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.page-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 13px;
+    color: azure;
+}
+.text-box ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+}
+.email-btn{
+    text-decoration: none;
+    color: azure;
+    border: 1px solid azure;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.email-btn:hover{
+    border: 1px solid #22A7F0;
+    background: #22A7F0;
+    transition: 1s;
+}
+.enroll-btn{
+    text-decoration: none;
+    color: azure;
+    border: 1px solid azure;
+    padding: 12px 62px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.enroll-btn:hover{
+    border: 1px solid #22A7F0;
+    background: #22A7F0;
+    transition: 1s;
+}
+/* transision for device */
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .page-links ul li{
+        display: block;
+    }
+    .page-links{
+        position: absolute;
+        background: #0067B0;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2; 
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: azure;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .page-links ul{
+        padding: 30px;
+    }
+}
+/* section2 details */
+.details{
+    background-color: #9cc3d5ff;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.details h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.details p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+}
+.info{
+    margin-top: 5%;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-text{
+    flex-basis: 31%;
+    background: #22a8f06e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.5s;
+}
+.info-text:hover{
+    box-shadow: 0 0 20px 0px #1298e0b4;
+}
+@media(max-width: 700px){
+    .info{
+        flex-direction: column;
+    }
+}
+/* university section design */
+.university{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 79px;
+}
+.university h1{
+    text-align: left;
+    padding-left: 8px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+.university p{
+    text-align: left;
+    font-weight: 200;
+    font-size: 13px;
+    padding-left: 8px;
+}
+.BGPIC img{
+    width: 1000px;
+    height: 500px;
+}
+.BGPIC{
+    flex-basis: 32%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    width: 1000px;
+}
+.colorblend a{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+.colorblend a:hover{
+    background: #42afe9c5;
+}
+.BGPIC a h2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-weight: bold;
+    color: #FFD662FF;
+    font-size: 26px;
+    transform: translateY(-100%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+.BGPIC:hover a h2{
+    top: 50%;
+    opacity: 1;
+}
+.BGPIC:hover{
+    box-shadow: 0 0 20px 0px #1c39419c;
+}
